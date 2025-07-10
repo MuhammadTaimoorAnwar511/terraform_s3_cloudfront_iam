@@ -1,0 +1,36 @@
+# Terraform local cache
+.terraform/
+
+# Terraform state files
+terraform.tfstate
+terraform.tfstate.backup
+terraform.tfstate.lock.info
+
+# Crash logs
+crash.log
+
+# Sensitive variable definitions
+*.tfvars.json
+
+# SSH keypairs
+*.pem
+
+# Override files (usually local/debug only)
+override.tf
+override.tf.json
+*_override.tf
+
+# CLI config
+.terraformrc
+terraform.rc
+
+# Cloud-init / user-data logs (if any)
+*.log
+
+# IDE/editor folders
+.vscode/
+.idea/
+
+# OS artifacts
+.DS_Store
+Thumbs.db
