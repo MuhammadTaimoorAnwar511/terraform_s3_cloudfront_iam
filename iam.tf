@@ -18,5 +18,5 @@ resource "aws_iam_access_key" "user_key" {
 
 resource "aws_iam_user_policy_attachment" "s3_full_access" {
   user       = aws_iam_user.user.name
-  policy_arn = "arn:aws:iam::aws:policy/AmazonS3FullAccess"
+  policy_arn = var.policy_arn
 }
