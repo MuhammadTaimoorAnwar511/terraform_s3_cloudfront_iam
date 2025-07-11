@@ -10,3 +10,9 @@ variable "iam_force_password_reset" {
   type        = bool
   default     = false
 }
+
+variable "policy_arn" {
+  description = "describe any policy you want to attach"
+  type        = string
+  default     = "arn:aws:iam::aws:policy/AmazonS3FullAccess"
+}

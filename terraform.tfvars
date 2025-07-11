@@ -13,4 +13,4 @@ cf_distribution_name = "taimoor-s3-cdn"  #description
 # iam user
 iam_user_name            = "taimoor-s3-iam-user"
 iam_force_password_reset = false   # false = no forced reset; true = require reset
-
+policy_arn               = "arn:aws:iam::aws:policy/AmazonS3FullAccess"  # s3 full access

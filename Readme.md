@@ -1,7 +1,9 @@
-aws configure
 cat ~/.aws/credentials 
-aws configure --profile=<user name>
+aws configure
 export AWS_PROFILE=<user name>
+aws configure
+===================================
+aws configure --profile=<user name>
 ===================================
 terraform init
 terraform validate
