@@ -1,23 +1,8 @@
-# bucket_policy.tf
 data "aws_iam_policy_document" "bucket_policy" {
-  # Public read (for website hosting if enabled)
-  statement {
-    sid       = "AllowPublicRead"
-    effect    = "Allow"
-    actions   = ["s3:GetObject"]
-    resources = ["${aws_s3_bucket.bucket.arn}/*"]
-
-    principals {
-      type        = "*"
-      identifiers = ["*"]
-    }
-  }
-
-  # CloudFront OAI read
   statement {
     sid    = "AllowCloudFrontServicePrincipalReadOnly"
     effect = "Allow"
-    actions   = ["s3:GetObject"]
+    actions = ["s3:GetObject"]
     resources = ["${aws_s3_bucket.bucket.arn}/*"]
 
     principals {
